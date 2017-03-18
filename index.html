@@ -2,16 +2,16 @@
 <html>
   <head>
     <title>Phil's SDK App</title>
-    <script src='https://aframe.io/releases/0.3.0/aframe.min.js'></script>
-    <script src='https://sdk.altvr.com/libs/altspace.js/2.0.3/altspace.min.js'></script>
+    <script src='https://cdn.rawgit.com/aframevr/aframe/e371500f/dist/aframe-master.js'></script>
+    <script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/53373740b2ada825a43230855c88d2fa541aebb8/dist/altspace.min.js"></script>
   </head>
   <body>
     <a-scene altspace='fullspace:true'>
       <a-assets>
-        <a-asset-item id='jeopardy2-obj' src='jeopardy2.obj'></a-asset-item>
-        <a-asset-item id='jeopardy2-mtl' src='jeopardy2.mtl'></a-asset-item>
+        <a-asset-item id='jeopardy-obj' src='jeopardy3.obj'></a-asset-item>
+        <a-asset-item id='jeopardy-mtl' src='jeopardy3.mtl'></a-asset-item>
       </a-assets>
-      <a-obj-model src='#jeopardy2-obj' mtl='#jeopardy2-mtl' position='0 0 0' scale='1 1 1'></a-obj-model>
+      <a-obj-model src='#jeopardy-obj' mtl='#jeopardy-mtl' position='0 0 0' scale='1 1 1' n-mesh-collider="type:environment; convex: false"></a-obj-model>
     </a-scene>
   </body>
 </html>
