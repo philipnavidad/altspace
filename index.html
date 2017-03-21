@@ -10,7 +10,7 @@
     <a-assets>
       <a-asset-item id='jeopardy-obj' src='jeopardy3.obj'></a-asset-item>
       <a-asset-item id='jeopardy-mtl' src='jeopardy3.mtl'></a-asset-item>
-      <audio id='theme-song' src='jeapordy-theme.mp3'></audio>
+      <audio id='theme-song' src='jeapordy-theme.wav'></audio>
     </a-assets>
     <a-entity position="1 0.8 10" scale="0.2 0.2 0.2" geometry="primitive: box" material="color: #8814A8" wire="on: click; emit: toggle; targets: #game #sound"></a-entity>
     <a-entity id="game" obj-model="obj: #jeopardy-obj; mtl: #jeopardy-mtl" position="0 -5 8" rotation="0 0 0" scale="0.05 0.05 0.05" n-mesh-collider="type:environment; convex: false" sync="own-on: toggle" sync-transform>
