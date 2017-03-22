@@ -16,7 +16,7 @@
     <a-entity id="game" obj-model="obj: #jeopardy-obj; mtl: #jeopardy-mtl" position="0 -5 8" rotation="0 0 0" scale="0.05 0.05 0.05" n-mesh-collider="type:environment; convex: false" sync="own-on: toggle" sync-transform>
       <a-animation attribute="position" begin="toggle" dur="1000" from="0 -5 10" to="0 0.55 8" direction="alternate" repeat="0"></a-animation>
       <a-animation attribute="scale" begin="toggle" dur="1000" direction="alternate" from="0.05 0.05 0.05" to="1 1 1" repeat="0"></a-animation>   
-    <a-entity id='sound' sound="on: toggle; src: #theme-song; autoplay: false"></a-entity>    
+    <a-entity id='sound' sound="on: toggle; src: #theme-song; autoplay: true"></a-entity>    
     </a-entity>
   </a-scene>
 </body>
